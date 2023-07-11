@@ -2,13 +2,13 @@
 <!DOCTYPE packagegui SYSTEM "../schema/packages.dtd">
 <?xml-stylesheet type="text/xsl" href="../xsl/package.xsl"?>
 <packagegui>
-        <copyright>
-        <![CDATA[
+	<copyright>
+	<![CDATA[
 /*
  * telegraf.xml
  *
  * part of pfSense (https://www.pfsense.org)
- * Copyright (c) 2017-2021 Rubicon Communications, LLC (Netgate)
+ * Copyright (c) 2017-2023 Rubicon Communications, LLC (Netgate)
  * All rights reserved.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -23,8 +23,8 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-        ]]>
-        </copyright>
+	]]>
+	</copyright>
     <name>telegraf</name>
     <title>Services: Telegraf</title>
     <include_file>/usr/local/pkg/telegraf.inc</include_file>
@@ -119,7 +119,6 @@
             <type>checkbox</type>
             <description>Use SSL but skip chain and host verification</description>
         </field>
-
         <field>
             <name>ElasticSearch Settings</name>
             <type>listtopic</type>
@@ -140,13 +139,13 @@
             <type>input</type>
             <description>Graphite Endpoint E.g.: host.fqdn:port</description>
         </field>
-        <field>
+	<field>
             <fielddescr>Graphite Prefix</fielddescr>
             <fieldname>graphite_prefix</fieldname>
             <type>input</type>
             <description>Prefix to be used when submitting data to Graphite</description>
         </field>
-        <field>
+	<field>
             <fielddescr>Graphite Timeout</fielddescr>
             <fieldname>graphite_timeout</fieldname>
             <type>input</type>
@@ -209,7 +208,8 @@
             <fielddescr>Additional configuration for Telegraf</fielddescr>
             <fieldname>telegraf_raw_config</fieldname>
             <type>textarea</type>
-            <size>80</size>
+            <cols>85</cols>
+            <rows>8</rows>
             <encoding>base64</encoding>
             <description>Additional directives for telegraf.conf.</description>
         </field>
